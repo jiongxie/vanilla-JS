@@ -11,6 +11,8 @@ console.log("---arrow function---");
 for(const vr of set.values()) {
 	console.log(vr);
 }
+
+// set forEach function
 set.forEach((vr) => console.log(vr));
 
 // add, delete, claer
@@ -25,3 +27,5 @@ set.delete(3);
 console.log(set);
 set.clear();
 console.log(set);
+
+// size

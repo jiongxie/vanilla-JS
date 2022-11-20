@@ -17,3 +17,13 @@ array = Array.from({
 	length: 8,
 });
 console.log(array);
+
+
+// push, unshift, pop, shift, splice, slice, concat, reverse, fill, join, isArray, indexOf, includes
+
+// map array
+console.log('---map array---');
+const map = [1, 2, 3, 4, 5];
+rs1 = map.map((item) => item * 2);
+console.log(rs1);
+
