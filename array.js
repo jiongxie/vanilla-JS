@@ -23,7 +23,7 @@ console.log(array);
 
 // map array
 console.log('---map array---');
-const map = [1, 2, 3, 4, 5];
-rs1 = map.map((item) => item * 2);
+const arr = [1, 2, 3, 4, 5];
+rs1 = arr.map((item) => item * 2);
 console.log(rs1);
 
