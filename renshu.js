@@ -21,3 +21,16 @@ const print4 = (name, age) => {
 }
 print4('Brian', 26);
 
+
+// spread
+const nos1 = [1,2,3,4,5,6,7];
+const nos2 = [...nos1, 8];
+console.log('nos1:'+ nos1);
+console.log('nos2:'+ nos2);
+
+// rest
+const filter = (...args) => {
+	return args.filter(el => el === 2);
+}
+
+console.log(filter(1,2,3));
