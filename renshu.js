@@ -34,3 +34,8 @@ const filter = (...args) => {
 }
 
 console.log(filter(1,2,3));
+
+// destructuring
+const nos = [1,2,3];
+[n1, ,n3] = nos;
+console.log(n1, n3);
