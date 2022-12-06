@@ -38,3 +38,11 @@ const rs2 = () => {
 }
 
 rs2();
+
+
+// average over 6 (filter, reduce)
+const noms = [1,2,3,4,5,6,7,8,9,10];
+
+const tots = noms.filter((item) => item > 6);
+const avgs = tots.reduce((avg,item) => avg + item / tots.length, 0);
+console.log(avgs);
