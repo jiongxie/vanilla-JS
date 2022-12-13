@@ -28,3 +28,21 @@ try {
 } catch (error) {
 	console.log('unstatisfied requirment');
 }
+
+// promise
+
+function prDelay(seconds) {
+	return new Promise((resolve, reject) => {
+			if(!seconds || seconds < 0) {
+				reject(new Error('seconds must be over 0'))
+			}
+		setTimeout(resolve, seconds*1000);
+	});
+}
+
+prDelay(1)
+	.then(() => console.log('timer complete'))
+	.catch(console.error)
+	.finally(() => console.log('the end'));
+
+
