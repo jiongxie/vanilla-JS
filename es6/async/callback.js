@@ -46,3 +46,23 @@ prDelay(1)
 	.finally(() => console.log('the end'));
 
 
+// promise chaining
+function buyHouse(money) {
+  return Promise.resolve(`${money} => condo`);
+}
+
+function earnMoney(condo) {
+  return Promise.resolve(`${condo} => money`);
+}
+
+function getMoney() {
+  return Promise.reject(new Error('no Money'));
+  //return Promise.resolve(`laboring => $1000000`);
+}
+
+getMoney()
+  .catch(() => '$1000000')
+  .then(buyHouse)
+  .then(earnMoney)
+  .then(console.log);
+
